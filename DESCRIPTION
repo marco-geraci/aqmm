@@ -1,0 +1,14 @@
+Package: aqmm
+Type: Package
+Title: Additive Quantile Mixed Models
+Version: 1.1
+Date: 2019-03-19
+Author: Marco Geraci
+Maintainer: Marco Geraci <geraci@mailbox.sc.edu>
+Depends: R (>= 3.0.0)
+Imports: stats, utils, Matrix, mgcv, nlme (>= 3.1-124), lqmm (>= 1.5.3), numDeriv (>= 2016.8-1), Rcpp (>= 0.12.13), 
+LinkingTo: Rcpp
+Suggests: R.rsp
+Description: This is an add-on for the R package lqmm to fit additive quantile mixed models.
+License: GPL (>= 2)
+LazyLoad: yes

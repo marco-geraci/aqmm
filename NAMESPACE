@@ -1,0 +1,26 @@
+useDynLib(aqmm, .registration=TRUE)
+
+import("mgcv")
+import("nlme")
+import("stats")
+
+importFrom("lqmm", "invvarAL", "theta.z.dim", "lqm", "coef.lqm", "residuals.lqm")
+importFrom("Matrix", "bdiag", "determinant", "Diagonal", "t")
+importFrom("numDeriv", "grad", "hessian")
+importFrom("Rcpp", "evalCpp")
+importFrom("utils", "packageDescription", "getFromNamespace")
+
+#exportPattern("^[^\\.]")
+exportPattern("^[[:alpha:]]+")
+#export(coef)
+#export(residuals)
+export(VarCorr)
+
+S3method(predict, aqmm)
+S3method(summary, aqmm)
+S3method(print, aqmm)
+S3method(print, summary.aqmm)
+S3method(VarCorr, aqmm)
+
+
+
